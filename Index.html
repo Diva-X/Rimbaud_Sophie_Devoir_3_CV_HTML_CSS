@@ -7,60 +7,71 @@
     <title>CV Sophie Rimbaud</title>
 </head>
 <body>
-
-    <header>
+<!-- header du cv avec photo-->
+<header>
     <img src="#" alt="Photo de profil" class="photo-profil">
     <h1>Sophie Rimbaud</h1>
-    <p><!-- Description rapide --></p>
+    <p>Développeuse Web & Web mobile</p>
 
-    <div class="contact">
-        <p><a href="#">Email</a></p>
-        <p><a href="#">Téléphone</a></p>
-        <p><a href="#" target="_blank">LinkedIn</a></p>
-        <p><!-- Adresse ou autre info --></p>
-    </div>
-    </header>
+    <h2 class="visually-hidden">Coordonnées</h2>
+    <address class="contact-container">
+        <div class="contact-gauche">
+        <p><a href="mailto:monemail@example.com">monemail@example.com</a></p>
+        <p><a href="tel:+33123456789">01 23 45 67 89</a></p>
+        </div>
+        <div class="contact-droite">
+        <p>
+            <a href="https://www.google.com/maps/place/10+Rue+de+la+Paix,+75002+Paris" target="_blank">
+            10 Rue de la Paix, 75002 Paris
+            </a>
+        </p>
+        <p>Permis B</p>
+        </div>
+    </address>
+</header>
 
     <main>
-    <!-- Partie gauche du CV -->
-    <section id="cv-gauche">
+    <!-- Partie complementaire gauche du CV -->
+    <aside id="cv-gauche">
+        <h2 class="visually-hidden">Informations complémentaires</h2>
 
-        <article>
-        <h2>Compétences</h2>
+        <section>
+        <h3>Compétences</h3>
         <ul>
             <li>HTML / CSS</li>
             <li>Git / GitHub</li>
             <li>Responsive Design</li>
             <li>Figma</li>
+            <li>Javascript</li>
         </ul>
-        </article>
+        </section>
 
-        <article>
-        <h2>Langues</h2>
+        <section>
+        <h3>Langues</h3>
         <ul>
             <li>Français : langue maternelle</li>
             <li>Anglais : courant</li>
         </ul>
-        </article>
+        </section>
 
-        <article>
-        <h2>Qualités</h2>
+        <section>
+        <h3>Qualités</h3>
         <ul>
             <li>Créative</li>
             <li>Autonome</li>
-                <li>Organisée</li>
+            <li>Organisée</li>
         </ul>
-        </article>
-
-        <article>
-            <h2>Centres d’intérêt</h2>
-            <ul>
-                <li>Écriture</li>
-                <li>Lecture</li>
-                <li>Design</li>
-            </ul>
-        </article>
         </section>
+
+        <section>
+        <h3>Centres d’intérêt</h3>
+        <ul>
+            <li>Écriture</li>
+            <li>Lecture</li>
+            <li>Design</li>
+        </ul>
+        </section>
+    </aside>
 
         <!-- Partie droite du CV -->
         <section id="cv-droite">
@@ -68,17 +79,15 @@
         <h2>Formations</h2>
         <ul>
             <li>
-                <span class="date">2025</span>
                 <div>
                 <h3 class="titre-formation">Formation Développeur Web Fullstack</h3>
-                <p>Centre de formation OpenClassrooms – En cours</p>
+                <p>Centre Européen de Fromation <time datetime="2024-04">Avril 2025</time> – <time datetime="2025-04">Avril 2026</time></p>
                 </div>
             </li>
             <li>
-                <span class="date">2020</span>
             <div>
-                <h3 class="titre-formation">Licence Lettres Modernes</h3>
-                <p>Université Lyon 2 – Mention Bien</p>
+                <h3 class="titre-formation">Doctorat linguistique</h3>
+                <p>Université Lyon 2  <time datetime="2015-09">Septembre 2015</p>
             </div>
             </li>
             </ul>
