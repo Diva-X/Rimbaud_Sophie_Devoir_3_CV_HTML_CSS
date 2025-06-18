@@ -1,0 +1,14 @@
+/* accessibilite navigateur*/
+
+.visually-hidden {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+ul {
+    list-style-type: none;
+    padding-left: 0; /* optionnel, pour enlever le retrait */
+    margin-left: 0;  /* optionnel, si besoin */
+}
