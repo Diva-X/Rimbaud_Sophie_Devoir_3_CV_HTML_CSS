@@ -9,28 +9,46 @@
 </head>
 <body>
 <!-- header du cv avec photo-->
-<header>
-    <img src="/Assets/Images/profil.jpg" alt="Photo de profil" class="photo-profil">
-    <h1>Sophie Rimbaud</h1>
-    <p>Développeuse Web & Web mobile</p>
+<header class="header-profil">
+    <div class="photo">
+        <a href="Assets/profile.jpg" target="_blank" rel="noopener noreferrer">
+        <img src="Assets/profile.jpg" alt="Photo de profil" class="photo-profil" />
+        </a>
+    </div>
 
-    <h2 class="visually-hidden">Coordonnées</h2>
+    <div class="infos-central">
+        <h1>Sophie Rimbaud</h1>
+        <p class="titre">Développeur Web et Web mobile</p>
+
+        <h2 class="visually-hidden">Coordonnées</h2>
     <address class="contact-container">
-        <div class="contact-gauche">
-        <p><a href="mailto:monemail@example.com">monemail@example.com</a></p>
-        <p><a href="tel:+33123456789">01 23 45 67 89</a></p>
-        </div>
-        <div class="contact-droite">
+    <div class="contact-gauche">
         <p>
-            <a href="https://www.google.com/maps/place/10+Rue+de+la+Paix,+75002+Paris" target="_blank">
+        <img src="Assets/icones/email.png" alt="" class="icon" aria-hidden="true" />
+        <span><a href="mailto:monemail@example.com">monemail@example.com</a></span>
+        </p>
+        <p>
+        <img src="Assets/icones/phone.png" alt="" class="icon" aria-hidden="true" />
+        <span><a href="tel:+33123456789">01 23 45 67 89</a></span>
+        </p>
+    </div>
+    <div class="contact-droite">
+        <p>
+        <img src="Assets/icones/address.png" alt="" class="icon" aria-hidden="true" />
+        <span>
+            <a href="https://www.google.com/maps/place/10+Rue+de+la+Paix,+75002+Paris" target="_blank" rel="noopener noreferrer">
             10 Rue de la Paix, 75002 Paris
             </a>
+        </span>
         </p>
-        <p>Permis B</p>
-        </div>
+        <p>
+        <img src="Assets/icones/voiture.png" alt="" class="icon" aria-hidden="true" />
+        <span>Permis B</span>
+        </p>
+    </div>
     </address>
+    </div>
 </header>
-
     <main>
     <!-- Partie complementaire gauche du CV -->
     <aside id="cv-gauche">
