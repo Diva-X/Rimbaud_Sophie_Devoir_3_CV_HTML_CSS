@@ -1,0 +1,102 @@
+/* accessibilite navigateur*/
+
+.visually-hidden {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+ul {
+    list-style-type: none;
+    padding-left: 0; /* optionnel, pour enlever le retrait */
+    margin-left: 0;  /* optionnel, si besoin */
+}
+
+
+/* Réinitialisation minimale */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corps de page */
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    }
+
+/* Header en haut */
+header {
+    background-color: #17abb3;
+    padding: 1rem;
+    color: #ffffff;
+    
+}
+
+header a{
+     color: inherit; /* hérite de la couleur du parent ( header) */
+  text-decoration: none; /* enlève le soulignement */
+}
+
+address {
+  font-style: normal; /* enlève l'italique par défaut */
+}
+
+/* Main en flex */
+main {
+    display: flex;
+    flex: 1;
+}
+
+/* Aside à gauche */
+#cv-gauche {
+    width: 30%;
+    background-color: #e3e3e3;
+    padding: 1rem;
+}
+
+/* Section droite du CV */
+#cv-droite {
+    flex: 1;
+    padding: 1rem;
+    background-color: #ffffff;
+}
+
+/* Footer en bas */
+footer {
+    height: 1.5cm;
+    background-color: #17abb3;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.icone-reseau {
+    height: 0.5cm;
+    width: auto;
+    filter: brightness(0) invert(1);
+    display: block;
+}
+
+.footer-texte {
+    font-size: 0.8rem;
+    margin: 0;
+    font-style: italic;
+    }
