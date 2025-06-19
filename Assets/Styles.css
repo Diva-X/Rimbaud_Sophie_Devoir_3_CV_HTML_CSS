@@ -46,8 +46,11 @@ body {
     background-color: #fff;
 }
 /* taille texte*/
-p, ul, li, h2, h3, h4 {
-    font-size: 0.6 rem; 
+p, ul, li, h3, h4 {
+    font-size: 0.7rem; 
+}
+h2 {
+    font-size: 1rem; 
 }
 
 #cv-container {
