@@ -1,5 +1,4 @@
-/* accessibilite navigateur*/
-
+/* accessibilite navigateur */
 .visually-hidden {
     position: absolute;
     left: -9999px;
@@ -7,6 +6,7 @@
     height: 1px;
     overflow: hidden;
 }
+
 ul {
     list-style-type: none;
     padding-left: 0; 
@@ -20,9 +20,7 @@ ul {
     box-sizing: border-box;
 }
 
-z
 /*police raleway*/
-
 @font-face {
     font-family: 'Raleway';
     src: url('Assets/Fonts/Raleway-VariableFont_wght.ttf') format('truetype');
@@ -39,22 +37,26 @@ z
 
 /* Corps de page */
 body {
+    margin: 0;
+    min-height: 100vh;
     font-family: 'Raleway', sans-serif;
     display: flex;
+    justify-content: center; /* Centre horizontalement */
+    background-color: #fff;
+}
+
+#cv-container {
+    width: 1160px;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 10px;
+    display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh; /* Prend toute la hauteur visible */
 }
 
-h2 {
-    color: #17abb3;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    border-bottom: 2px solid #e3e3e3; 
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-}
-
-/* Header*/
+/* Header */
 .header-profil {
     display: flex;
     align-items: center;
@@ -96,7 +98,6 @@ h2 {
 }
 
 /* Coordonnées en 2 colonnes */
-
 .contact-container {
     display: flex;
     width: 100%;
@@ -144,8 +145,8 @@ h2 {
 
 /* Main en flex */
 main {
+    flex-grow: 1; /* Prend tout l’espace restant */
     display: flex;
-    flex: 1;
 }
 
 /* Aside à gauche */
@@ -204,8 +205,10 @@ h4 {
     font-family: 'Lato', sans-serif;
     font-weight: 700; /* gras */
 }
+
 /* Footer en bas */
 footer {
+    margin-top: auto; /* pousse le footer en bas */
     background-color: #17abb3;
     color: #ffffff;
     padding: 1rem 0;
