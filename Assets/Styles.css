@@ -1,5 +1,4 @@
-/* accessibilite navigateur*/
-
+/* accessibilite navigateur */
 .visually-hidden {
     position: absolute;
     left: -9999px;
@@ -7,6 +6,7 @@
     height: 1px;
     overflow: hidden;
 }
+
 ul {
     list-style-type: none;
     padding-left: 0; 
@@ -20,9 +20,7 @@ ul {
     box-sizing: border-box;
 }
 
-z
 /*police raleway*/
-
 @font-face {
     font-family: 'Raleway';
     src: url('Assets/Fonts/Raleway-VariableFont_wght.ttf') format('truetype');
@@ -39,14 +37,31 @@ z
 
 /* Corps de page */
 body {
+    margin: 0;
+    min-height: 100vh;
     font-family: 'Raleway', sans-serif;
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    flex-direction: column; /* AJOUTÉ */
+    justify-content: center;
+    background-color: #fff;
+}
+/* taille texte*/
+p, ul, li, h2, h3, h4 {
+  font-size: 0.9rem; /* ou une autre valeur plus petite comme 0.8rem */
 }
 
+#cv-container {
+    width: 1160px;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Prend toute la hauteur visible */
+}
 h2 {
-    color: #17abb3;
+    color: #17abb3; /* bleu */
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     border-bottom: 2px solid #e3e3e3; 
@@ -54,7 +69,14 @@ h2 {
     margin-bottom: 15px;
 }
 
-/* Header*/
+h3 {
+    color: #17abb3; /* bleu */
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+/* Header */
 .header-profil {
     display: flex;
     align-items: center;
@@ -96,7 +118,6 @@ h2 {
 }
 
 /* Coordonnées en 2 colonnes */
-
 .contact-container {
     display: flex;
     width: 100%;
@@ -144,44 +165,44 @@ h2 {
 
 /* Main en flex */
 main {
+    flex-grow: 1; /* Prend tout l’espace restant */
     display: flex;
-    flex: 1;
 }
 
 /* Aside à gauche */
 #cv-gauche {
     width: 25%;
     background-color: #f5f5f5;
-    padding: 1rem;
-}
-
-#cv-gauche section ul li {
-    font-weight: bold;
-}
-
-.langue {
-    font-weight: bold;
+    padding: 1rem 1.5cm; /* marge interne à gauche et droite de l’aside */
+    box-sizing: border-box;
 }
 
 .competence {
     display: flex;
     align-items: center;
-    gap: 80px;
-    margin-bottom: 8px;
+    gap: 10px;
+}
+
+.nom-competence,
+.etoiles {
+    flex-basis: 50%;
+    max-width: 50%;
 }
 
 .nom-competence {
-    font-weight: bold;
-    min-width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .etoiles {
     display: flex;
-    gap: 3px;
+    justify-content: flex-start;
+    gap: 5px;
 }
 
 .star {
-    font-size: 20px;
+    font-size: 15px;
     user-select: none;
     position: relative;
     color: transparent;
@@ -204,8 +225,10 @@ h4 {
     font-family: 'Lato', sans-serif;
     font-weight: 700; /* gras */
 }
+
 /* Footer en bas */
 footer {
+    margin-top: auto; /* pousse le footer en bas */
     background-color: #17abb3;
     color: #ffffff;
     padding: 1rem 0;

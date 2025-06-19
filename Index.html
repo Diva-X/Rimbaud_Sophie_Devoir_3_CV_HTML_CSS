@@ -1,181 +1,202 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Users/sophierimbaud/Documents/Rimbaud_Sophie_Devoir_3_CV_HTML_CSS/Assets/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="Assets/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
     <title>CV Sophie Rimbaud</title>
 </head>
 <body>
-<!-- header du cv avec photo-->
-<header class="header-profil">
-    <div class="photo">
-        <a href="Assets/profile.jpg" target="_blank" rel="noopener noreferrer">
-        <img src="Assets/profile.jpg" alt="Photo de profil" class="photo-profil" />
-        </a>
-    </div>
+    <div id="cv-container">
+        <header class="header-profil">
+            <div class="photo">
+                <a href="Assets/profile.jpg" target="_blank" rel="noopener noreferrer">
+                    <img src="Assets/profile.jpg" alt="Photo de profil" class="photo-profil" />
+                </a>
+            </div>
+            <div class="infos-central">
+                <h1>Sophie Rimbaud</h1>
+                <p class="titre">Développeur Web et Web mobile</p>
 
-    <div class="infos-central">
-        <h1>Sophie Rimbaud</h1>
-        <p class="titre">Développeur Web et Web mobile</p>
+                <h2 class="visually-hidden">Coordonnées</h2>
+                <address class="contact-container">
+                    <div class="contact-gauche">
+                        <p>
+                            <img src="Assets/icones/email.png" alt="" class="icon" aria-hidden="true" />
+                            <span><a href="mailto:monemail@example.com">monemail@example.com</a></span>
+                        </p>
+                        <p>
+                            <img src="Assets/icones/phone.png" alt="" class="icon" aria-hidden="true" />
+                            <span><a href="tel:+33123456789">01 23 45 67 89</a></span>
+                        </p>
+                    </div>
+                    <div class="contact-droite">
+                        <p>
+                            <img src="Assets/icones/address.png" alt="" class="icon" aria-hidden="true" />
+                            <span>
+                                <a href="https://www.google.com/maps/place/10+Rue+de+la+Paix,+75002+Paris" target="_blank" rel="noopener noreferrer">
+                                    10 Rue de la Paix, 75002 Paris
+                                </a>
+                            </span>
+                        </p>
+                        <p>
+                            <img src="Assets/icones/voiture.png" alt="" class="icon" aria-hidden="true" />
+                            <span>Permis B</span>
+                        </p>
+                    </div>
+                </address>
+            </div>
+        </header>
 
-        <h2 class="visually-hidden">Coordonnées</h2>
-    <address class="contact-container">
-    <div class="contact-gauche">
-        <p>
-        <img src="Assets/icones/email.png" alt="" class="icon" aria-hidden="true" />
-        <span><a href="mailto:monemail@example.com">monemail@example.com</a></span>
-        </p>
-        <p>
-        <img src="Assets/icones/phone.png" alt="" class="icon" aria-hidden="true" />
-        <span><a href="tel:+33123456789">01 23 45 67 89</a></span>
-        </p>
-    </div>
-    <div class="contact-droite">
-        <p>
-        <img src="Assets/icones/address.png" alt="" class="icon" aria-hidden="true" />
-        <span>
-            <a href="https://www.google.com/maps/place/10+Rue+de+la+Paix,+75002+Paris" target="_blank" rel="noopener noreferrer">
-            10 Rue de la Paix, 75002 Paris
-            </a>
-        </span>
-        </p>
-        <p>
-        <img src="Assets/icones/voiture.png" alt="" class="icon" aria-hidden="true" />
-        <span>Permis B</span>
-        </p>
-    </div>
-    </address>
-    </div>
-</header>
-    <main>
-    <!-- Partie complementaire gauche du CV -->
-    <aside id="cv-gauche">
-        <h2 class="visually-hidden">Informations complémentaires</h2>
+        <main>
+            <!-- Partie complémentaire gauche du CV -->
+            <aside id="cv-gauche">
+                <h2 class="visually-hidden">Informations complémentaires</h2>
 
-        <section>
-        <h2>Compétences</h2>
-        <ul>
-            <div class="competence">
-        <span class="nom-competence">HTML / CSS</span>
-        <span class="etoiles">
-            <span class="star filled">★</span>
-            <span class="star filled">★</span>
-            <span class="star filled">★</span>
-            <span class="star">★</span>
-            <span class="star">★</span>
-        </span>
-</div>
-            <li>Git / GitHub</li>
-            <li>Responsive Design</li>
-            <li>Figma</li>
-            <li>Javascript</li>
-            <li>React</li>
-        </ul>
-        </section>
+                <section>
+                    <h2>Compétences</h2>
+                    <ul>
+                        <li class="competence">
+                            <span class="nom-competence">HTML</span>
+                            <span class="etoiles">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star">★</span>
+                            </span>
+                        </li>
+                        <li class="competence">
+                            <span class="nom-competence">CSS</span>
+                            <span class="etoiles">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star">★</span>
+                            </span>
+                        </li>
+                        <li class="competence">
+                            <span class="nom-competence">Git/GitHub</span>
+                            <span class="etoiles">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </span>
+                        </li>
+                        <li class="competence">
+                            <span class="nom-competence">JavaScript</span>
+                            <span class="etoiles">
+                                <span class="star filled">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </span>
+                        </li>
+                    </ul>
+                </section>
 
-        <section>
-    <h2>Langues</h2>
-    <ul>
-        <li>
-        <span class="langue">Français</span>
-        <span class="niveau">langue maternelle</span>
-        </li>
-        <li>
-        <span class="langue">Anglais</span>
-        <span class="niveau">C1</span>
-        </li>
-        <li>
-        <span class="langue">Mandarin</span>
-        <span class="niveau">B1</span>
-        </li>
-    </ul>
-</section>
+                <section>
+                    <h2>Langues</h2>
+                    <ul>
+                        <li>
+                            <span class="langue">Français</span>
+                            <span class="niveau">langue maternelle</span>
+                        </li>
+                        <li>
+                            <span class="langue">Anglais</span>
+                            <span class="niveau">C1</span>
+                        </li>
+                        <li>
+                            <span class="langue">Mandarin</span>
+                            <span class="niveau">B1</span>
+                        </li>
+                    </ul>
+                </section>
 
-        <section>
-        <h2>Qualités</h2>
-        <ul>
-            <li>Créative</li>
-            <li>Autonome</li>
-            <li>Organisée</li>
-        </ul>
-        </section>
+                <section>
+                    <h2>Qualités</h2>
+                    <ul>
+                        <li>Créative</li>
+                        <li>Autonome</li>
+                        <li>Organisée</li>
+                    </ul>
+                </section>
 
-        <section>
-        <h2>Centres d’intérêt</h2>
-        <ul>
-            <li>Écriture poétique narrative</li>
-            <li>Jeux vidéos et DnD</li>
-            <li>Design peinture et procreate</li>
-        </ul>
-        </section>
-    </aside>
+                <section>
+                    <h2>Centres d’intérêt</h2>
+                    <ul>
+                        <li>Écriture poétique narrative</li>
+                        <li>Jeux vidéos et DnD</li>
+                        <li>Design peinture et procreate</li>
+                    </ul>
+                </section>
+            </aside>
 
-        <!-- Partie droite du CV -->
-        <section id="cv-droite">
-        <article>
-        <h2>Profil</h2>
-        <p>Développeuse Web passionnée et créative, je suis actuellement en formation pour maîtriser les technologies Frontend et Backend. 
-            Forte d’une expérience professionnelle en enseignement et pédagogie, je suis organisée, sérieuse et adaptable. 
-            Curieuse et motivée, je suis également ouverte à l’apprentissage de nouveaux langages informatiques ou technologies selon les besoins du projet de stage. 
-            Je souhaite mettre mes compétences techniques et humaines au service d’une entreprise dynamique, 
-            tout en continuant à progresser et contribuer activement à ses projets web et mobile.</p>
-        <h2>Formations</h2>
-        <ul>
-            <li>
-                <div>
-                <h4 class="titre-formation">Formation Développeur Web Fullstack</h2>
-                <p>Centre Européen de Formation <time datetime="2024-04">Avril 2025</time> – <time datetime="2025-04">Avril 2026</time></p>
+            <!-- Partie droite du CV -->
+            <section id="cv-droite">
+                <article>
+                    <h2>Profil</h2>
+                    <p>
+                        Développeuse Web passionnée et créative, je suis actuellement en formation pour maîtriser les technologies Frontend et Backend. 
+                        Forte d’une expérience professionnelle en enseignement et pédagogie, je suis organisée, sérieuse et adaptable. 
+                        Curieuse et motivée, je suis également ouverte à l’apprentissage de nouveaux langages informatiques ou technologies selon les besoins du projet de stage. 
+                        Je souhaite mettre mes compétences techniques et humaines au service d’une entreprise dynamique, 
+                        tout en continuant à progresser et contribuer activement à ses projets web et mobile.
+                    </p>
+                </article>
+
+                <article>
+                    <h2>Formations</h2>
+                    <ul>
+                        <li>
+                            <h4 class="titre-formation">Formation Développeur Web Fullstack</h4>
+                            <p>Centre Européen de Formation <time datetime="2024-04">Avril 2025</time> – <time datetime="2025-04">Avril 2026</time></p>
+                        </li>
+                        <li>
+                            <h4 class="titre-formation">Doctorat linguistique</h4>
+                            <p>Université Lyon 2 <time datetime="2015-09">Septembre 2015</time></p>
+                        </li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h2>Expérience professionnelle</h2>
+                    <ul>
+                        <li>
+                            <h4 class="titre-formation">Professeur d'anglais en université - Preparation IELTS</h4>
+                            <p>Guangzhou, China <time datetime="2017-09">Septembre 2017</time> – <time datetime="2023-03">Mars 2023</time></p>
+                        </li>
+                        <li>
+                            <h4 class="titre-formation">Direction des programmes d'échange internationaux Polytech Nantes</h4>
+                            <p>Guangzhou, China <time datetime="2015-09">Septembre 2015</time> – <time datetime="2017-08">Août 2017</time></p>
+                        </li>
+                        <li>
+                            <h4 class="titre-formation">Professeur de Français en université</h4>
+                            <p>Hangzhou, China <time datetime="2013-08">Août 2013</time> – <time datetime="2015-08">Août 2015</time></p>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-container">
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/rimbaudsophie/" target="_blank" aria-label="LinkedIn">
+                        <img src="Assets/icones/linkedin.png" alt="LinkedIn" class="icone-reseau" />
+                    </a>
+                    <a href="https://github.com/Diva-X" target="_blank" aria-label="GitHub">
+                        <img src="Assets/icones/github.png" alt="GitHub" class="icone-reseau" />
+                    </a>
                 </div>
-            </li>
-            <li>
-            <div>
-                <h4 class="titre-formation">Doctorat linguistique</h2>
-                <p>Université Lyon 2 <time datetime="2015-09">Septembre 2015</time></p>
+                <p class="footer-texte">Mise à jour le <time datetime="2025-06-18">18 juin 2025</time></p>
             </div>
-            </li>
-            </ul>
-        </article>
-
-        <article>
-    <h2>Expérience professionnelle</h2>
-        <ul>
-            <li>
-            <div>
-                <h4 class="titre-formation">Professeur d'anglais en université - Preparation IELTS</h4>
-                <p>Guangzhou, China <time datetime="2017-09">Septembre 2017</time> – <time datetime="2023-03">Mars 2023</time></p>
-            </div>
-            </li>
-            <li>
-            <div>
-                <h4 class="titre-formation">Direction des programmes d'échange internationaux Polytech Nantes</h4>
-                <p>Guangzhou, China <time datetime="2015-09">Septembre 2015</time> – <time datetime="2017-08">Août 2017</time></p>
-            </div>
-            </li>
-            <li>
-            <div>
-                <h4 class="titre-formation">Professeur de Français en université</h4>
-                <p>Hangzhou, China <time datetime="2013-08">Août 2013</time> – <time datetime="2015-08">Août 2015</time></p>
-            </div>
-            </li>
-        </ul>
-    </article>
-        </section>
-    </main>
-
-<footer>
-    <div class="footer-container">
-        <div class="social-icons">
-        <a href="https://www.linkedin.com/in/rimbaudsophie/" target="_blank" aria-label="LinkedIn">
-            <img src="Assets/Icones/linkedin.png" alt="LinkedIn" class="icone-reseau">
-        </a>
-        <a href="https://github.com/Diva-X" target="_blank" aria-label="GitHub">
-            <img src="Assets/Icones/github.png" alt="GitHub" class="icone-reseau">
-        </a>
-        </div>
-        <p class="footer-texte">Mise à jour le <time datetime="2025-06-18">18 juin 2025</time></p>
+        </footer>
     </div>
-</footer>
 </body>
 </html>
