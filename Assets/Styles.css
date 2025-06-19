@@ -12,3 +12,52 @@ ul {
     padding-left: 0; /* optionnel, pour enlever le retrait */
     margin-left: 0;  /* optionnel, si besoin */
 }
+
+
+/* Réinitialisation minimale */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corps de page */
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    }
+
+/* Header en haut */
+header {
+    background-color: #f0f0f0;
+    padding: 1rem;
+}
+
+/* Main en flex */
+main {
+    display: flex;
+    flex: 1;
+}
+
+/* Aside à gauche */
+#cv-gauche {
+    width: 30%;
+    background-color: #e6e6e6;
+    padding: 1rem;
+}
+
+/* Section droite du CV */
+#cv-droite {
+    flex: 1;
+    padding: 1rem;
+    background-color: #ffffff;
+}
+
+/* Footer en bas */
+footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 0.5rem;
+}
