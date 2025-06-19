@@ -31,8 +31,19 @@ body {
 
 /* Header en haut */
 header {
-    background-color: #f0f0f0;
+    background-color: #17abb3;
     padding: 1rem;
+    color: #ffffff;
+    
+}
+
+header a{
+     color: inherit; /* hérite de la couleur du parent ( header) */
+  text-decoration: none; /* enlève le soulignement */
+}
+
+address {
+  font-style: normal; /* enlève l'italique par défaut */
 }
 
 /* Main en flex */
@@ -44,7 +55,7 @@ main {
 /* Aside à gauche */
 #cv-gauche {
     width: 30%;
-    background-color: #e6e6e6;
+    background-color: #e3e3e3;
     padding: 1rem;
 }
 
@@ -57,7 +68,7 @@ main {
 
 /* Footer en bas */
 footer {
-    background-color: #f0f0f0;
+    background-color: #17abb3;
     text-align: center;
     padding: 0.5rem;
 }
