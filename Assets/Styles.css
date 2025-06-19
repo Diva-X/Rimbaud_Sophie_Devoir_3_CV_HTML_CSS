@@ -9,8 +9,8 @@
 }
 ul {
     list-style-type: none;
-    padding-left: 0; /* optionnel, pour enlever le retrait */
-    margin-left: 0;  /* optionnel, si besoin */
+    padding-left: 0; 
+    margin-left: 0;  
 }
 
 
@@ -26,7 +26,7 @@ ul {
 @font-face {
     font-family: 'Raleway';
     src: url('Assets/Fonts/Raleway-VariableFont_wght.ttf') format('truetype');
-    font-weight: 100 900; /* plage variable */
+    font-weight: 100 900;
     font-style: normal;
 }
 
@@ -50,7 +50,7 @@ h2, h3 {
     font-family: 'Lato', sans-serif;
     font-weight: 700;
 }
-/* Header en haut */
+/* Header*/
 header {
     background-color: #17abb3;
     padding: 1rem;
@@ -60,11 +60,22 @@ header {
 
 header a{
      color: inherit; /* hérite de la couleur du parent ( header) */
-  text-decoration: none; /* enlève le soulignement */
+  text-decoration: none; 
 }
 
 address {
-  font-style: normal; /* enlève l'italique par défaut */
+  font-style: normal;
+}
+
+.photo-profil {
+    width: 150px;           
+    height: 150px;         
+    border-radius: 50%;    
+    border: 4px solid white;
+    object-fit: cover;     
+    display: block;        
+    object-fit: cover;    
+    object-position: center 20%;
 }
 
 /* Main en flex */
