@@ -20,6 +20,7 @@ ul {
     box-sizing: border-box;
 }
 
+z
 /*police raleway*/
 
 @font-face {
@@ -44,11 +45,15 @@ body {
     min-height: 100vh;
 }
 
-h2, h3 {
+h2 {
     color: #17abb3;
     font-family: 'Lato', sans-serif;
-    font-weight: 700;
+    font-weight: 400;
+    border-bottom: 2px solid #e3e3e3; 
+    padding-bottom: 5px;
+    margin-bottom: 15px;
 }
+
 /* Header*/
 .header-profil {
     display: flex;
@@ -66,6 +71,7 @@ h2, h3 {
     border: 3px solid white;
     object-fit: cover;
     cursor: zoom-in;
+    margin-left: 100px; 
 }
 
 .infos-central {
@@ -94,7 +100,7 @@ h2, h3 {
 .contact-container {
     display: flex;
     width: 100%;
-    max-width: 600px; /* élargi pour éviter les sauts de ligne */
+    max-width: 400px; /* élargi pour éviter les sauts de ligne */
     gap: 40px;         /* plus d’espace entre les colonnes */
     justify-content: center;
     margin-top: 10px;
@@ -144,9 +150,47 @@ main {
 
 /* Aside à gauche */
 #cv-gauche {
-    width: 30%;
+    width: 25%;
     background-color: #f5f5f5;
     padding: 1rem;
+}
+
+#cv-gauche section ul li {
+    font-weight: bold;
+}
+
+.langue {
+    font-weight: bold;
+}
+
+.competence {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 8px;
+}
+
+.nom-competence {
+    font-weight: bold;
+    min-width: 120px;
+}
+
+.etoiles {
+    display: flex;
+    gap: 3px;
+}
+
+.star {
+    font-size: 20px;
+    user-select: none;
+    position: relative;
+    color: transparent;
+    -webkit-text-stroke: 1.5px #17abb3;
+}
+
+.star.filled {
+    color: #17abb3;
+    -webkit-text-stroke: 0;
 }
 
 /* Section droite du CV */
@@ -156,6 +200,10 @@ main {
     background-color: #ffffff;
 }
 
+h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700; /* gras */
+}
 /* Footer en bas */
 footer {
     background-color: #17abb3;
