@@ -41,8 +41,13 @@ body {
     min-height: 100vh;
     font-family: 'Raleway', sans-serif;
     display: flex;
-    justify-content: center; /* Centre horizontalement */
+    flex-direction: column; /* AJOUTÉ */
+    justify-content: center;
     background-color: #fff;
+}
+/* taille texte*/
+p, ul, li, h2, h3, h4 {
+  font-size: 0.9rem; /* ou une autre valeur plus petite comme 0.8rem */
 }
 
 #cv-container {
@@ -168,36 +173,36 @@ main {
 #cv-gauche {
     width: 25%;
     background-color: #f5f5f5;
-    padding: 1rem;
-}
-
-#cv-gauche section ul li {
-    font-weight: bold;
-}
-
-.langue {
-    font-weight: bold;
+    padding: 1rem 1.5cm; /* marge interne à gauche et droite de l’aside */
+    box-sizing: border-box;
 }
 
 .competence {
     display: flex;
     align-items: center;
-    gap: 80px;
-    margin-bottom: 8px;
+    gap: 10px;
+}
+
+.nom-competence,
+.etoiles {
+    flex-basis: 50%;
+    max-width: 50%;
 }
 
 .nom-competence {
-    font-weight: bold;
-    min-width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .etoiles {
     display: flex;
-    gap: 3px;
+    justify-content: flex-start;
+    gap: 5px;
 }
 
 .star {
-    font-size: 20px;
+    font-size: 15px;
     user-select: none;
     position: relative;
     color: transparent;
