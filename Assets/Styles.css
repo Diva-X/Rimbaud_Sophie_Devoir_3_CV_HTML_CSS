@@ -86,7 +86,7 @@ h2, h3 {
     margin: 8px 0 15px 0;
     font-size: 1.3rem;
     font-weight: normal;
-    color: #ccc;
+    color: #ffffff;
 }
 
 /* Coordonnées en 2 colonnes */
@@ -111,14 +111,14 @@ h2, h3 {
 
 /* Lien dans contact */
 .contact-container a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
 }
 
 .contact-container a:hover,
 .contact-container a:focus {
     text-decoration: underline;
-    outline: 2px solid white;
+    outline: 2px solid #ffffff;
     outline-offset: 2px;
 }
 /* Main en flex */
@@ -130,7 +130,7 @@ main {
 /* Aside à gauche */
 #cv-gauche {
     width: 30%;
-    background-color: #e3e3e3;
+    background-color: #f5f5f5;
     padding: 1rem;
 }
 
@@ -144,7 +144,7 @@ main {
 /* Footer en bas */
 footer {
     background-color: #17abb3;
-    color: white;
+    color: #ffffff;
     padding: 1rem 0;
     text-align: center;
 }
