@@ -55,7 +55,22 @@ body {
     flex-direction: column;
     min-height: 100vh; /* Prend toute la hauteur visible */
 }
+h2 {
+    color: #17abb3; /* bleu */
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    border-bottom: 2px solid #e3e3e3; 
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
 
+h3 {
+    color: #17abb3; /* bleu */
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
 /* Header */
 .header-profil {
     display: flex;
