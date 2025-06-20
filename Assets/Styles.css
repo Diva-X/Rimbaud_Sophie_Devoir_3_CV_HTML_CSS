@@ -51,6 +51,12 @@ p, ul, li, h3, h4 {
 }
 h2 {
     font-size: 1rem; 
+    color: #17abb3;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    border-bottom: 2px solid #e3e3e3;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 #cv-container {
