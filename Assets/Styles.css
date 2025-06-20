@@ -218,6 +218,32 @@ main {
     -webkit-text-stroke: 0;
 }
 
+/* langues */
+.langues {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ligne-langue {
+    display: flex;
+    justify-content: space-between;
+}
+
+.langue {
+    font-weight: bold;
+}
+
+/*liste à puce*/
+.liste-carree {
+    list-style-type: square;
+    padding-left: 1.2em; /* ou ajuste selon la marge souhaitée */
+}
+
+.liste-carree li::marker {
+  color: #17abb3; /* bleu turquoise comme dans ton CV */
+}
+
 /* Section droite du CV */
 #cv-droite {
     flex: 1;
