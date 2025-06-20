@@ -217,6 +217,22 @@ main {
     -webkit-text-stroke: 0;
 }
 
+/* langues */
+.langues {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ligne-langue {
+    display: flex;
+    justify-content: space-between;
+}
+
+.langue {
+    font-weight: bold;
+}
+
 /* Section droite du CV */
 #cv-droite {
     flex: 1;
