@@ -232,7 +232,7 @@ main {
 
 .etoiles {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     gap: 5px;
 }
 
@@ -264,7 +264,8 @@ main {
 
 .niveau {
     white-space: nowrap;
-    margin-left: 1rem;
+    text-align: right;
+    min-width: 4em;
 }
 
 /*liste à puce*/
@@ -290,6 +291,7 @@ h4 {
 }
 
 p.alinéa {
+    text-align: justify;
     text-indent: 2em;
 }
 
