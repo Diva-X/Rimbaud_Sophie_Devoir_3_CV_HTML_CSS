@@ -281,8 +281,13 @@ footer {
 .icone-reseau {
     height: 0.5cm;
     width: auto;
-    filter: brightness(0) invert(1); /* icônes blanches */
+    filter: brightness(0) invert(1);
     display: block;
+    transition: opacity 0.3s ease; /* animation douce */
+}
+
+.icone-reseau:hover {
+    opacity: 0.7; /* opacité réduite au survol */
 }
 
 .footer-texte {
