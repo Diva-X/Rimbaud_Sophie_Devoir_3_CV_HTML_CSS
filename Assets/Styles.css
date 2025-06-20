@@ -41,13 +41,16 @@ body {
     min-height: 100vh;
     font-family: 'Raleway', sans-serif;
     display: flex;
-    flex-direction: column; /* AJOUTÉ */
+    flex-direction: column; 
     justify-content: center;
     background-color: #fff;
 }
 /* taille texte*/
-p, ul, li, h2, h3, h4 {
-  font-size: 0.9rem; /* ou une autre valeur plus petite comme 0.8rem */
+p, ul, li, h3, h4 {
+    font-size: 0.7rem; 
+}
+h2 {
+    font-size: 1rem; 
 }
 
 #cv-container {
@@ -58,10 +61,10 @@ p, ul, li, h2, h3, h4 {
     padding: 0 10px;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Prend toute la hauteur visible */
+    min-height: 100vh;
 }
 h2 {
-    color: #17abb3; /* bleu */
+    color: #17abb3;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     border-bottom: 2px solid #e3e3e3; 
@@ -70,7 +73,7 @@ h2 {
 }
 
 h3 {
-    color: #17abb3; /* bleu */
+    color: #17abb3;
     font-family: 'Lato', sans-serif;
     font-weight: 600;
     margin-top: 1.5rem;
@@ -100,7 +103,7 @@ h3 {
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center; /* centre horizontalement */
+    align-items: center;
     text-align: center;
 }
 
@@ -121,8 +124,8 @@ h3 {
 .contact-container {
     display: flex;
     width: 100%;
-    max-width: 400px; /* élargi pour éviter les sauts de ligne */
-    gap: 40px;         /* plus d’espace entre les colonnes */
+    max-width: 400px;
+    gap: 40px;
     justify-content: center;
     margin-top: 10px;
 }
@@ -165,7 +168,7 @@ h3 {
 
 /* Main en flex */
 main {
-    flex-grow: 1; /* Prend tout l’espace restant */
+    flex-grow: 1;
     display: flex;
 }
 
