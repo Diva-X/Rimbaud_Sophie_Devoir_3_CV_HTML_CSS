@@ -49,16 +49,15 @@ body {
 p, ul, li, h3, h4 {
     font-size: 0.7rem; 
 }
+
 h2 {
-    margin-top: 2rem; /* ou 20px selon ton unité préférée */
+    margin: 2rem 0 1rem 0; /* haut droite-bas gauche */
     color: #17abb3;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     border-bottom: 2px solid #e3e3e3;
     padding-bottom: 5px;
-    margin-bottom: 15px;
 }
-
 
 #cv-container {
     width: 1160px;
@@ -70,15 +69,6 @@ h2 {
     flex-direction: column;
     min-height: 100vh;
 }
-h2 {
-    color: #17abb3;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    border-bottom: 2px solid #e3e3e3;
-    padding-bottom: 5px;
-    margin: 2rem 0 1rem 0;
-}
-
 
 h3 {
     color: #17abb3;
@@ -98,14 +88,13 @@ h3 {
 }
 
 .photo-profil {
-    width: 120px;
-    height: 120px;
+    width: 7.5rem;
+    height: 7.5rem;
     border-radius: 50%;
-    border: 3px solid white;
+    border: 0.1875rem solid white;
     object-fit: cover;
     cursor: zoom-in;
-    margin-left: 100px; 
-    cursor: zoom-in;
+    margin-left: 6.25rem;
 }
 
 .infos-central {
@@ -185,7 +174,7 @@ main {
 #cv-gauche {
     width: 25%;
     background-color: #f5f5f5;
-    padding: 1rem 1.5cm; /* marge interne à gauche et droite de l’aside */
+    padding: 1rem 3.5rem;/* marge interne à gauche et droite de l’aside */
     box-sizing: border-box;
 }
 
@@ -214,7 +203,7 @@ main {
 }
 
 .star {
-    font-size: 15px;
+    font-size: 0.9rem;;
     user-select: none;
     position: relative;
     color: transparent;
@@ -245,11 +234,11 @@ main {
 /*liste à puce*/
 .liste-carree {
     list-style-type: square;
-    padding-left: 1.2em; /* ou ajuste selon la marge souhaitée */
+    padding-left: 1.2em; 
 }
 
 .liste-carree li::marker {
-  color: #17abb3; /* bleu turquoise comme dans ton CV */
+    color: #17abb3;
 }
 
 /* Section droite du CV */
@@ -287,11 +276,11 @@ footer {
 }
 
 .icone-reseau {
-    height: 0.5cm;
+    height: 1.2rem;
     width: auto;
     filter: brightness(0) invert(1);
     display: block;
-    transition: opacity 0.3s ease; /* animation douce */
+    transition: opacity 0.3s ease;
 }
 
 .icone-reseau:hover {
