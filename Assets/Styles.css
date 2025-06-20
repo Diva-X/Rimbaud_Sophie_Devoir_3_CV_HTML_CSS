@@ -175,7 +175,7 @@ h3 {
     display: flex;
     align-items: center;
     gap: 10px;
-    white-space: nowrap; /* évite le retour à la ligne dans l’adresse */
+    white-space: nowrap;
 }
 
 .icon {
@@ -208,7 +208,7 @@ main {
 #cv-gauche {
     width: 30%;
     background-color: #f5f5f5;
-    padding: 1rem 3.5rem;/* marge interne à gauche et droite de l’aside */
+    padding: 1rem 3.5rem;
     box-sizing: border-box;
 }
 
@@ -287,7 +287,7 @@ main {
 
 h4 {
     font-family: 'Lato', sans-serif;
-    font-weight: 700; /* gras */
+    font-weight: 700;
 }
 
 p.alinéa {
@@ -297,7 +297,7 @@ p.alinéa {
 
 .formation-item {
     display: flex;
-    justify-content: space-between; /* espace entre gauche et droite */
+    justify-content: space-between;
     align-items: center;
     padding: 0.5em 0;
     position: relative;
@@ -306,7 +306,7 @@ p.alinéa {
 
 .formation-left {
     display: flex;
-    flex-direction: column; /* titre au-dessus, lieu en dessous */
+    flex-direction: column;
 }
 
 .titre-formation {
@@ -326,7 +326,7 @@ p.alinéa {
     margin: 0;
     font-size: 0.85rem;
     color: #17abb3;
-    white-space: nowrap; /* empêcher retour à la ligne */
+    white-space: nowrap;
 }
 
 /* Survol de la ligne formation, stage ou expérience */
