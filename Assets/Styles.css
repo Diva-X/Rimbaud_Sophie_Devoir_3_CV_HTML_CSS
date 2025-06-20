@@ -233,6 +233,16 @@ main {
     font-weight: bold;
 }
 
+/*liste à puce*/
+.liste-carree {
+    list-style-type: square;
+    padding-left: 1.2em; /* ou ajuste selon la marge souhaitée */
+}
+
+.liste-carree li::marker {
+  color: #17abb3; /* bleu turquoise comme dans ton CV */
+}
+
 /* Section droite du CV */
 #cv-droite {
     flex: 1;
