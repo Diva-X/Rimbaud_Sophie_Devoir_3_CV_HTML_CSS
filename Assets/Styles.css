@@ -46,8 +46,42 @@ body {
     background-color: #fff;
 }
 /* taille texte*/
-p, ul, li, h3, h4 {
-    font-size: 0.7rem; 
+h1 {
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #17abb3;
+    margin: 2rem 0 1rem;
+    border-bottom: 2px solid #e3e3e3;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #17abb3;
+    margin: 1.5rem 0 0.75rem;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+p, li, ul {
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.titre {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #ffffff;
+    margin: 8px 0 15px;
 }
 
 h2 {
